@@ -13,10 +13,10 @@
 //   };
 
 module.exports = {
-  HOST: process.env.DB_HOST || "postgres",
+  HOST: process.env.DB_HOST || "junction.proxy.rlwy.net",
   USER: process.env.DB_USER || "postgres",
-  PASSWORD: process.env.DB_PASSWORD || "12345",
-  DB: process.env.DB_NAME || "WebDev-Praktek-MovieDb",
+  PASSWORD: process.env.DB_PASSWORD || "JbEuPPwlZPlOmSfZvVnjcNYtFXTqmryU",
+  DB: process.env.DB_NAME || "WebDev-Praktek-railway",
   dialect: "postgres",
   dialectOptions: {
     ssl: {
