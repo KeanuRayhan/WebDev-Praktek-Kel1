@@ -25,13 +25,11 @@ const login = (username, password) => {
 };
 
 const googleLogin = (token) => {
-    return axios.post(API_URL + "google-login", {
-        token,
-    }).then((response) => {
+    return axios.post(API_URL + "google-login", { token }, { withCredentials: true })
+    .then((response) => {
         if (response.data.accessToken) {
             localStorage.setItem("user", JSON.stringify(response.data));
         }
-
         return response.data;
     });
 };
