@@ -3,7 +3,7 @@ import axios from "axios";
 const API_URL = "https://webdev-praktek-kel1-production.up.railway.app/api/auth/";
 
 const register = (username, email, password) => {
-    axios.post(API_URL + "signup", {
+    return axios.post(API_URL + "signup", {
         username,
         email,
         password,
@@ -11,7 +11,7 @@ const register = (username, email, password) => {
 };
 
 const login = (username, password) => {
-    axios.post(API_URL + "signin", {
+    return axios.post(API_URL + "signin", {
         username,
         password,
     })
@@ -25,7 +25,7 @@ const login = (username, password) => {
 };
 
 const googleLogin = (token) => {
-    axios.post(API_URL + "google-login", { token }, { withCredentials: true })
+    return axios.post(API_URL + "google-login", { token }, { withCredentials: true })
     .then((response) => {
         if (response.data.accessToken) {
             localStorage.setItem("user", JSON.stringify(response.data));
