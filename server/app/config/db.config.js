@@ -13,7 +13,6 @@
 //   };
 
 module.exports = {
-    PASSWORD: process.env.DB_PASSWORD || "12345",
   HOST: process.env.DB_HOST || "postgres",
   USER: process.env.DB_USER || "postgres",
   PASSWORD: process.env.DB_PASSWORD || "12345",
