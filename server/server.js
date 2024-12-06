@@ -6,7 +6,7 @@ require('dotenv').config();
 const app = express();
 
 var corsOptions = {
-  origin: ["http://localhost:3000, https://dramaku-kel1.vercel.app"],
+  origin: ["http://localhost:3000", "https://dramaku-kel1.vercel.app"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   headers: ["x-access-token, Origin, Content-Type, Accept"],
   credentials: true,
