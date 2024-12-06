@@ -16,7 +16,7 @@ app.use(cors(corsOptions));
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "https://dramaku-kel1.vercel.app");
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  res.header("Access-Control-Allow-Headers", "Origin, x-access-token, Content-Type, Accept, Authorization");
+  res.header("Access-Control-Allow-Headers", "Origin, x-access-token, Content-Type, Accept");
   res.header("Access-Control-Allow-Credentials", "true");
   next();
 });
