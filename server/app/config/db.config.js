@@ -17,6 +17,7 @@ module.exports = {
   USER: process.env.DB_USER || "postgres",
   PASSWORD: process.env.DB_PASSWORD || "JbEuPPwlZPlOmSfZvVnjcNYtFXTqmryU",
   DB: process.env.DB_NAME || "railway",
+  PORT: process.env.DB_PORT || 5432,
   dialect: "postgres",
   dialectOptions: {
     ssl: {
