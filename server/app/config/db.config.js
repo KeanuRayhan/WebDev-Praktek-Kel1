@@ -16,7 +16,7 @@ module.exports = {
   HOST: process.env.DB_HOST || "junction.proxy.rlwy.net",
   USER: process.env.DB_USER || "postgres",
   PASSWORD: process.env.DB_PASSWORD || "JbEuPPwlZPlOmSfZvVnjcNYtFXTqmryU",
-  DB: process.env.DB_NAME || "WebDev-Praktek-railway",
+  DB: process.env.DB_NAME || "railway",
   dialect: "postgres",
   dialectOptions: {
     ssl: {
