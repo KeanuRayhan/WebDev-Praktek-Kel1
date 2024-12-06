@@ -5,7 +5,7 @@ function ListDrama({ title, url, year, genres, actors, id }) {
     return (
       <Link to={`/movies/${id}`} className="p-2 space-y-5">
         <div className="bg-gray-800 px-5 py-6 rounded-lg flex items-start">
-          <img src={`http://localhost:8080/${url}`} alt={title} className="w-32 h-40 rounded-lg mr-10 object-cover" />
+          <img src={`https://webdev-praktek-kel1-production.up.railway.app/${url}`} alt={title} className="w-32 h-40 rounded-lg mr-10 object-cover" />
           <div className="flex-1 flex flex-col justify-between">
             <div>
               <h2 className="text-xl font-bold">{title}</h2>

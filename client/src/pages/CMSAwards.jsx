@@ -18,7 +18,7 @@ const CmsAwards = () => {
   useEffect(() => {
     const fetchAwards = async () => {
       try {
-        const response = await fetch("http://localhost:8080/api/awards");
+        const response = await fetch("https://webdev-praktek-kel1-production.up.railway.app/api/awards");
         if (!response.ok) {
           throw new Error("Failed to fetch awards data.");
         }
@@ -35,7 +35,7 @@ const CmsAwards = () => {
 
     const fetchCountries = async () => {
       try {
-        const response = await fetch("http://localhost:8080/api/countries");
+        const response = await fetch("https://webdev-praktek-kel1-production.up.railway.app/api/countries");
         if (!response.ok) {
           throw new Error("Failed to fetch countries data.");
         }
@@ -82,7 +82,7 @@ const CmsAwards = () => {
   const handleSubmitNewAward = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:8080/api/awards", {
+      const response = await fetch("https://webdev-praktek-kel1-production.up.railway.app/api/awards", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -96,7 +96,7 @@ const CmsAwards = () => {
       const createdAward = await response.json();
 
       // Fetch the country details for the created award
-      const countryResponse = await fetch(`http://localhost:8080/api/countries/${createdAward.country_id}`);
+      const countryResponse = await fetch(`https://webdev-praktek-kel1-production.up.railway.app/api/countries/${createdAward.country_id}`);
       if (!countryResponse.ok) {
         throw new Error("Failed to fetch country details.");
       }
@@ -116,7 +116,7 @@ const CmsAwards = () => {
 
   const handleEditAward = async (id) => {
     try {
-      const response = await fetch(`http://localhost:8080/api/awards/${id}`, {
+      const response = await fetch(`https://webdev-praktek-kel1-production.up.railway.app/api/awards/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json"
@@ -144,7 +144,7 @@ const CmsAwards = () => {
     if (!confirmDelete) return;
 
     try {
-      const response = await fetch(`http://localhost:8080/api/awards/${id}`, {
+      const response = await fetch(`https://webdev-praktek-kel1-production.up.railway.app/api/awards/${id}`, {
         method: "DELETE"
       });
 

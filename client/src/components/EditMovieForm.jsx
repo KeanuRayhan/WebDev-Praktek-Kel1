@@ -291,7 +291,7 @@ const EditMovieForm = ({ movieId }) => {
                   onClick={() => handleActorChange(actor.actor_id)}
                 >
                   <img 
-                    src={`http://localhost:8080/uploads/actors/${actor.url_photo}`}
+                    src={`https://webdev-praktek-kel1-production.up.railway.app/uploads/actors/${actor.url_photo}`}
                     alt={actor.actor_name}
                     className="w-24 h-36 mx-auto rounded bg-gray-700 object-cover"
                     // onClick={() => handleActorChange(actor.actor_id)}
@@ -311,7 +311,7 @@ const EditMovieForm = ({ movieId }) => {
                     return actor ? (
                       <div key={actor.actor_id} className="text-center">
                         <img 
-                          src={`http://localhost:8080/uploads/actors/${actor.url_photo}`}
+                          src={`https://webdev-praktek-kel1-production.up.railway.app/uploads/actors/${actor.url_photo}`}
                           alt={actor.actor_name}
                           className="w-16 h-24 mx-auto rounded bg-gray-700 object-cover"
                         />

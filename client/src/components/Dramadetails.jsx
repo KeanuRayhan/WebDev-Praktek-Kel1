@@ -4,7 +4,7 @@ const Dramadetails = ({ poster, title, year, genres, availability, rating }) => 
     return (
         <div className="mt-8 flex space-x-8">
             <img
-                src={`http://localhost:8080/${poster}`} 
+                src={`https://webdev-praktek-kel1-production.up.railway.app/${poster}`} 
                 alt="Poster Drama"
                 className="w-[200px] h-[300px] rounded bg-gray-700 object-cover"
             />

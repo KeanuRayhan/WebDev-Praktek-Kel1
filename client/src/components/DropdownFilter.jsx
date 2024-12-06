@@ -22,7 +22,7 @@ const DropdownFilter = ({ onFilterChange }) => {
   useEffect(() => {
     const fetchGenres = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/genres');
+        const response = await fetch('https://webdev-praktek-kel1-production.up.railway.app/api/genres');
         const data = await response.json();
         setGenres(data);
       } catch (error) {
@@ -32,7 +32,7 @@ const DropdownFilter = ({ onFilterChange }) => {
 
     const fetchPlatforms = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/platforms');
+        const response = await fetch('https://webdev-praktek-kel1-production.up.railway.app/api/platforms');
         const data = await response.json();
         setPlatforms(data);
       } catch (error) {
@@ -42,7 +42,7 @@ const DropdownFilter = ({ onFilterChange }) => {
 
     const fetchCountries = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/countries');
+        const response = await fetch('https://webdev-praktek-kel1-production.up.railway.app/api/countries');
         const data = await response.json();
         setCountries(data);
       } catch (error) {
@@ -52,7 +52,7 @@ const DropdownFilter = ({ onFilterChange }) => {
 
     const fetchYears = async () => {
       try {
-        const response = await fetch('http://localhost:8080/api/movies/years');
+        const response = await fetch('https://webdev-praktek-kel1-production.up.railway.app/api/movies/years');
         const data = await response.json();
         if (Array.isArray(data.years)) {
           setYears(data.years);  // Set hasil tahun ke state React

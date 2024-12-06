@@ -17,7 +17,7 @@ const CountriesPage = () => {
   useEffect(() => {
     const fetchCountries = async () => {
       try {
-        const response = await fetch("http://localhost:8080/api/countries");
+        const response = await fetch("https://webdev-praktek-kel1-production.up.railway.app/api/countries");
         const data = await response.json();
         setCountries(data);
       } catch (error) {
@@ -40,7 +40,7 @@ const CountriesPage = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:8080/api/countries", {
+      const response = await fetch("https://webdev-praktek-kel1-production.up.railway.app/api/countries", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -68,7 +68,7 @@ const CountriesPage = () => {
 
   const handleUpdateCountry = async (countryId) => {
     try {
-      const response = await fetch(`http://localhost:8080/api/countries/${countryId}`, {
+      const response = await fetch(`https://webdev-praktek-kel1-production.up.railway.app/api/countries/${countryId}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -97,7 +97,7 @@ const CountriesPage = () => {
 
   const confirmDeleteCountry = async () => {
     try {
-      const response = await fetch(`http://localhost:8080/api/countries/${deleteCountryId}`, { method: 'DELETE' });
+      const response = await fetch(`https://webdev-praktek-kel1-production.up.railway.app/api/countries/${deleteCountryId}`, { method: 'DELETE' });
       if (response.ok) {
         setCountries(countries.filter(country => country.country_id !== deleteCountryId));
         setDeleteCountryId(null);

@@ -43,7 +43,7 @@ const MovieCard = ({ title, url, year, genres, id, rating }) => {
         <div className="relative overflow-hidden rounded-lg mb-2">
           {isInView && (
             <img 
-              src={`http://localhost:8080/${url}`}
+              src={`https://webdev-praktek-kel1-production.up.railway.app/${url}`}
               alt={title} 
               className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110" 
               loading='lazy'
