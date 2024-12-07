@@ -1,8 +1,20 @@
-# DRAMAKU IMDB
+# 🎥DRAMAKU🎥
 
-## About DramaKu
+## **📘Table of Contents📘**
 
-Proyek ini adalah platform berbasis web yang berfungsi untuk memberikan informasi-informasi tentang film, acara TV, dan series, mirip dengan IMDB (Internet Movie Database). Aplikasi ini dirancang untuk pengguna umum, penulis ulasan (Writer), dan administrator, dengan fitur-fitur utama sebagai berikut:
+1. [About Dramaku](#about-dramaku)
+2. [Demo](#demo)
+3. [Teknologi yang Digunakan](#teknologi-yang-digunakan)
+4. [Cara Instalasi](#cara-instalasi)
+5. [Catatan](#catatan)
+6. [Kontribusi](#kontribusi)
+7. [Dosen pembimbing](#dosen-pembimbing)
+8. [Kontak](#kontak)
+9. [Lisensi](#lisensi)
+10. [Institusi](#institusi)
+
+<h2 id="about-dramaku">🦖About Dramaku🦖</h2>
+Proyek ini adalah platform berbasis web yang berfungsi untuk memberikan informasi-informasi tentang film, acara TV, dan series, mirip dengan IMDB (Internet Movie Database). Aplikasi ini dirancang untuk pengguna umum, penulis ulasan (Writer), dan administrator, dengan Fitur - Fitur utama sebagai berikut:
 
 - **Beranda/Halaman Utama:** Menampilkan semua daftar film dan acara TV populer, fitur pencarian, dan filter untuk mempermudah penelusuran konten yang akan dicari.
 - **Detail Drama/Film/Acara TV:** Informasi lengkap tentang sebuah film atau acara TV, seperti sinopsis, tanggal rilis, genre, rating, daftar pemeran, dan ulasan/review pengguna.
@@ -12,27 +24,62 @@ Proyek ini adalah platform berbasis web yang berfungsi untuk memberikan informas
 - **Ulasan dan Rating Pengguna:** Pengguna dapat memberikan ulasan dan rating untuk konten yang mereka tonton.
 - **Validasi Data:** Memvalidasi drama, ulasan, serta memblokir pengguna yang melanggar kebijakan platform.
 
-DramaKu dirancang untuk menjadi platform referensi utama bagi para penggemar film/series/drama dengan menawarkan pengalaman pengguna yang unggul. Antarmuka yang responsif memastikan aplikasi dapat diakses dengan nyaman di berbagai perangkat, sementara navigasi intuitif memudahkan pengguna menjelajahi konten. Dengan performa yang cepat dan database yang diperbarui secara rutin, DramaKu memberikan informasi yang selalu relevan dan terkini, menjadikannya pilihan terpercaya untuk semua kebutuhan pencinta drama.
+DramaKu dirancang untuk menjadi platform referensi utama bagi para penggemar film/series/drama dengan menawarkan pengalaman pengguna yang unggul.
 
 ---
 
+<h2 id="demo">📺Demo📺</h2>
+Anda dapat mencoba aplikasi DramaKu melalui tautan berikut: https://dramaku-kel1.vercel.app/
 
-## Teknologi yang Digunakan
+Login Sebagai **Admin**:
 
-- **Frontend:** React.js, Tailwind
-- **Backend:** Node.js, Express.js
-- **Database:** PostgreSQL
-- **Lainnya:** OAuth untuk autentikasi Google, Figma untuk desain mockup
+- **Username: useradmin**
+- **Password: useradmin**
 
+Sebagai **Pengguna**:
+
+Silakan mendaftar melalui menu Register menggunakan email Anda atau akun Google.
+
+atau login menggunakan:
+- **Username: useranonym** 
+- **Password: useranonym**
 ---
 
-## Cara Instalasi
 
-### Prasyarat
+<h2 id="teknologi-yang-digunakan">💻Teknologi yang Digunakan⚙️</h2>
+
+- **Frontend:** React.js, Tailwind  
+  <div style="text-align: center;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React.js" width="40" height="40">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind" width="40" height="40">
+  </div>
+
+- **Backend:** Node.js, Express.js  
+  <div style="text-align: center;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js" width="40" height="40">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Express.js" width="40" height="40">
+  </div>
+
+- **Database:** PostgreSQL  
+  <div style="text-align: center;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="PostgreSQL" width="40" height="40">
+  </div>
+
+- **Lainnya:** OAuth untuk autentikasi Google, Figma untuk desain mockup  
+  <div style="text-align: center;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Oauth_logo.svg" alt="OAuth" width="40" height="40">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" width="40" height="40">
+  </div>
+ 
+---
+
+<h2 id="cara-instalasi">🛠 Cara Instalasi ⚙️</h2>
+
+## Prasyarat
 - **Node.js**
 - **Database Engine**: PostgreSQL
 
-### Langkah Instalasi
+## Langkah Instalasi
 
 1. Clone repository:
    ```bash
@@ -66,44 +113,82 @@ DramaKu dirancang untuk menjadi platform referensi utama bagi para penggemar fil
 
 6. Akses aplikasi di `http://localhost:8000`.
 
----
+##  Cara Install dengan Docker  
 
-## Struktur Proyek
-
-- `/web-movie`: Kode untuk antarmuka pengguna.
-- `/backend-movie`: Kode untuk API dan manajemen database.
-- `/web-native`: File statis seperti gambar, CSS, dan JavaScript.
-
----
-
-## Kontribusi
-
-Kami menyambut kontribusi dari semua orang! Ikuti langkah berikut:
-
-1. Fork repository ini.
-2. Buat branch untuk fitur Anda:
-   ```bash
-   git checkout -b fitur-baru
-   ```
-3. Kirim pull request ke branch `main`.
+1. Pastikan Docker telah terpasang di perangkat Anda.
+2. Sesuaikan konfigurasi variabel DB di .env dan seeder.py.
+3. Jalankan perintah berikut:
+    ```bash 
+    docker-compose up --build
+4. Buka browser dan akses `http://localhost:8000/` untuk melihat website Dramaku.
 
 ---
 
-## Lisensi
+<h2 id="catatan">🗒️Catatan🗒️</h2>
+Website yang saat ini dikembangkan memiliki beberapa keterbatasan, terutama terkait dataset yang digunakan. Kekurangan tersebut meliputi:
 
+- Keterbatasan Data: Dataset yang digunakan masih belum mencukupi untuk menampilkan informasi secara lengkap.
+- Data Tidak Aktual: Beberapa data yang ditampilkan mungkin belum sepenuhnya mencerminkan kondisi terkini.
+
+---
+
+<h2 id="kontribusi">👨‍💻Kontribusi👨‍💻</h2>
+<div align="center">
+
+  <table border="0">
+    <tr>
+      <td align="center">
+        <a href="https://github.com/KeanuRayhan">
+          <img src="https://avatars.githubusercontent.com/u/117803802?v=4" width="100" alt="MahardikaPratama" style="border-radius: 50%; border: 2px solid #0000FF;" />
+        </a>
+        <br>
+        <a href="https://github.com/KeanuRayhan" style="color:#808080; font-weight: bold; text-decoration: none;">Keanu</a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/Revandi2245">
+          <img src="https://avatars.githubusercontent.com/u/117830304?v=4" width="100" alt="niqanabila16" style="border-radius: 50%; border: 2px solid #0000FF;" />
+        </a>
+        <br>
+        <a href="https://github.com/Revandi2245" style="color:#808080; font-weight: bold; text-decoration: none;">Revandi</a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/hanifzndn">
+          <img src="https://avatars.githubusercontent.com/u/117618640?v=4" width="100" alt="Contributor3" style="border-radius: 50%; border: 2px solid #0000FF;" />
+        </a>
+        <br>
+        <a href="https://github.com/hanifzndn" style="color:#808080; font-weight: bold; text-decoration: none;">Hanif</a>
+      </td>
+    </tr>
+  </table>
+  <p style="margin-top: 20px; font-size: 16px; color: #9;">
+    Terima kasih banyak kepada semua kontributor atas dedikasi dan kerja kerasnya!
+  </p>
+</div>
+
+---
+
+
+<h2 id="dosen-pembimbing">👩‍🏫 Dosen Pembimbing</h2>
+<div align="center"> <a href="https://github.com/sriratnawulan123"> <img src="https://avatars.githubusercontent.com/u/148301780?v=4" width="120" alt="Sri Ratna Wulan" style="border-radius: 50%; border: 3px solid #4caf50;" /> </a> <p style="color:#9; font-weight: bold; font-size: 18px;">Sri Ratna Wulan</p> </div>
+
+---
+
+<h2 id="kontak">📱Kontak</h2>
+
+Untuk pertanyaan atau saran, hubungi kami di:
+- Email:
+ 1. [keanu.rayhan.tif422@polban.ac.id](mailto:keanu.rayhan.tif422@polban.ac.id)
+ 2. [revandi.faudiamar.tif422@polban.ac.id](mailto:revandi.faudiamar.tif422@polban.ac.id)
+ 3. [muhammad.hanif.tif422@polban.ac.id](mailto:muhammad.hanif.tif422@polban.ac.id)
+
+---
+
+<h2 id="lisensi">Lisensi</h2>
 Proyek ini dilisensikan di bawah lisensi MIT. Lihat file [LICENSE](LICENSE) untuk informasi lebih lanjut.
 
 ---
 
-## Kontak
-
-Untuk pertanyaan atau saran, hubungi kami di:
-- Email: [email@example.com](mailto:email@example.com)
-- GitHub Issues: [Link Issues](https://github.com/username/repository-name/issues)
-
----
-
-## Tautan Tambahan
-
-- **Mockup Desain:** [Figma Project](https://www.figma.com/design/RDs6FDYyAgkza5aJHiLdtu/Untitled?node-id=0-1&t=eM1TJtghd0X8dT6t-0)
-- **Repository GitHub:** [Repository](https://github.com/username/repository-name)
+<h2 id="institusi">🏢 Institusi</h2>
+<div align="center">
+  <img src="https://www.polban.ac.id/wp-content/uploads/2021/11/MASTER-LOGO-POLBAN-SMALL.png" height="100" alt="Polban Logo" />
+</div>
