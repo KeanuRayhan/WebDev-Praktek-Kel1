@@ -89,7 +89,7 @@ atau login menggunakan:
 
 2. Instal dependensi:
    ```bash
-   npm install
+   npm install --legacy-peer-deps
    npm install multer 
    npm install react-validation
    npm install validator
@@ -108,19 +108,24 @@ atau login menggunakan:
 
 5. Jalankan server:
    ```bash
+   node server.js
+   ```
+
+6. Jalankan client:
+    ```bash
    npm start
    ```
 
-6. Akses aplikasi di `http://localhost:8000`.
+6. Akses aplikasi di `http://localhost:3000`.
 
 ##  Cara Install dengan Docker  
 
 1. Pastikan Docker telah terpasang di perangkat Anda.
-2. Sesuaikan konfigurasi variabel DB di .env dan seeder.py.
+2. Sesuaikan konfigurasi variabel DB di .env.
 3. Jalankan perintah berikut:
     ```bash 
     docker-compose up --build
-4. Buka browser dan akses `http://localhost:8000/` untuk melihat website Dramaku.
+4. Buka browser dan akses `http://localhost:3000/` untuk melihat website Dramaku.
 
 ---
 
